@@ -1,0 +1,29 @@
+.client-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.client-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.client-linc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+    transition: fill var(--transition-dur-and-fund), border-color var(--transition-dur-and-fund);
+
+&:hover,
+&:focus {
+        fill: var(--blue-color);
+        border-color: var(--blue-color);
+    }
+}
+

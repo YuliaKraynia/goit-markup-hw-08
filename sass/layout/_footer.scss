@@ -1,0 +1,148 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--accent-background-dark);
+}
+
+.logolight {
+    color: #FFFFFF;
+}
+
+.adress {
+    font-style: normal;
+    @include font ();
+
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.connection {
+    font-style: normal;
+    @include font ();
+    
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-adress {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-adress-map {
+    padding-top: 20px;
+}
+
+.footer-email {
+    margin-top: 9px;
+}
+
+.footer-tel {
+    margin-top: 9px;
+}
+
+.footer-title {
+    display: block;
+    font-style: normal;
+    @include font ($fs, 700, 16px);
+   
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.footer-link {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.footer-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color var(--transition-dur-and-fund);
+
+&:hover,
+&:focus {
+    background-color: var(--blue-color);
+    }
+}
+
+.footer-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-box {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
+}
+
+.footer-link-icon {
+    fill: #FFFFFF;
+}
+
+.footer__name {
+    @include font ($fs, 700, 16px);
+    
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-form__connection {
+    display: flex;
+}
+
+.footer-form-input {
+    @include font (16px, $fw, 20px);
+    
+    letter-spacing: 0.03em;
+    width: 358px;
+    height: 50px;
+
+    padding-top: 15px;
+    padding-left: 16px;
+    padding-bottom: 15px;
+
+    color: rgba(255, 255, 255, 0.6);
+    background-color: var(--accent-background-dark);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    margin-right: 12px;
+    color: #FFFFFF;
+}
+
+.footer-form__submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include font (16px, 700, 30px);
+    
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    color: #FFFFFF;
+    background-color: var(--blue-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+}
+
+.footer-form-icon {
+    margin-left: 10px;
+}

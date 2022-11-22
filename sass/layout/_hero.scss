@@ -1,0 +1,48 @@
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #C4C4C4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imeges/overlay/people.jpg");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.main-title {
+    @include font (44px, 900, 60px);
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 696px;
+    margin: 0 auto;
+    display: block;
+
+}
+
+.modal-btn {
+    display: block;
+
+    font-family: 'Roboto', sans-serif;
+    @include font (16px, 700, 30px);
+ 
+    letter-spacing: 0.06em;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    background-color: var(--blue-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    color: #FFFFFF;
+    border: 0 solid;
+    margin: 0 auto;
+
+    margin-top: 30px;
+}
