@@ -1,17 +1,19 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) 
+{
   .menu {
     display: none;
 }  
 .contact {
     display: none;
 }
+
 }
 .page-heder-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
+
 
 
 /*
