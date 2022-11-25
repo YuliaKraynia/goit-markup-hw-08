@@ -30,8 +30,9 @@
                     <a class="menu__link link" href="">Контакты</a>
                 </li>
             </ul>
-             </nav>
-            <button type="button" class="mobile-menu-open">
+            </nav>
+
+            <button type="button" class="mobile-menu-open js-open-menu">
                 <svg class="mobail-menu-open_icon" width="40px" height="40px">
                     <use href="./imeges/link/sprite.svg#burger-icon"></use>  
                 </svg>
@@ -56,6 +57,31 @@
                 </li>
             </ul>
         </div>
+        <div class="mobile-menu js-menu-container">
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__close-btn js-close-menu">
+                    <svg class="mobile-menu__close-icon" width="40" height="40">
+                        <use href="./imeges/link/sprite.svg#icon-close-modal"></use>
+                    </svg>
+                </button>                 
+            
+                <ul class="mobail-menu__list">
+                    <li class="link">Студия</li>
+                    <li class="link">Портфолио</li>
+                    <li class="link">Контакты</li>
+                </ul>
+                <ul class="mobail-menu__list">
+                    <li class="link">+38 096 111 11 11</li>
+                    <li class="link">info@devstudio.com</li>
+                </ul>
+                <ul class="mobail-menu__list">
+                    <li class="link">Instagram</li>
+                    <li class="link">Twitter</li>
+                    <li class="link">Facebook</li>
+                    <li class="link">LinkedIn</li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     
@@ -70,7 +96,7 @@
         </section>  -->
 
     <!--DESCRIPTION-->   
-<!--        <section class="section-description">
+   <!--    <section class="section-description">
             <div class="container">
                 <ul class="list description">
                     <li class="block-description">
@@ -380,7 +406,7 @@
     </main>
 
     <!--FOOTER-->
-<!--    <footer class="footer">
+ <!--   <footer class="footer">
         <div class="container footer-box">
              <div class="footer-logo">
                 <a class="link logo" href="WebStudio" lang="en">Web<span class="logolight">Studio</span></a>
@@ -535,5 +561,6 @@
 
 
  <!--   <script src="./js/modal.js"></script>        -->
+ <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

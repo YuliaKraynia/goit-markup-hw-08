@@ -29,14 +29,14 @@
 }
 
 .text-description {
-    @include font ();
+    @include font();
     
     letter-spacing: 0.03em;
     color: var(--accent-color-text);
 }
 
 .title-description {
-    @include font ($fs, 700, 16px);
+    @include font($fw: 700, $lh: 16px);
     
     letter-spacing: 0.03em;
     text-transform: uppercase;

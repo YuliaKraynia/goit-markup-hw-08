@@ -11,7 +11,7 @@
 }
 
 .main-title {
-    @include font (44px, 900, 60px);
+    @include font($fs: 44px, $fw: 900, $lh: 60px);
 
     text-align: center;
     letter-spacing: 0.06em;
@@ -27,7 +27,7 @@
     display: block;
 
     font-family: 'Roboto', sans-serif;
-    @include font (16px, 700, 30px);
+    @include font($fs: 16px, $fw: 700, $lh: 30px);
  
     letter-spacing: 0.06em;
 

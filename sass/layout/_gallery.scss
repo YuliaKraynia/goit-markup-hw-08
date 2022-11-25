@@ -4,7 +4,7 @@
 }
 
 .services {
-    @include font (16px, 500, 26px);
+    @include font($fs: 16px, $fw: 500, $lh: 26px);
 
     text-align: center;
     letter-spacing: 0.03em;
@@ -18,7 +18,7 @@
     padding-left: 22px;
     padding-right: 22px;
 
-    @include font (16px, 500, 26px);
+    @include font($fs: 16px, $fw: 500, $lh: 26px);
     
     text-align: center;
     letter-spacing: 0.03em;
@@ -55,7 +55,7 @@
 }
 
 .gallery-work__project_name {
-    @include font (18px, 700, 36px);
+    @include font($fs: 18px, $fw: 700, $lh: 36px);
 
     letter-spacing: 0.06em;
     color: var(--accent-color-header);
@@ -63,7 +63,7 @@
 }
 
 .gallery-work__project_form {
-    @include font (16px, $fw, 30px);
+    @include font($fs: 16px, $lh: 30px);
    
     letter-spacing: 0.03em;
     color: var(--accent-color-text);
@@ -107,7 +107,7 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    @include font (18px, $fw, 28px);
+    @include font($fs: 18px, $lh: 28px);
     
     letter-spacing: 0.03em;
     padding: 63px;

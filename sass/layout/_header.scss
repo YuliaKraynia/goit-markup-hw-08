@@ -1,22 +1,126 @@
 @media screen and (max-width: 767px) 
 {
-  .menu {
+.menu {
     display: none;
 }  
 .contact {
     display: none;
 }
+.mobile-menu-open {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    padding-top: 10px;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    @include font($fs: 24px, $fw: 700, $lh: 28px);
+
+    letter-spacing: 0.03em;
+ 
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: var(--blue-color);
+}
 
 }
+
+.logodark {
+    color: #000000;
+}
+
 .page-heder-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+/*==========*/
+
+
+@media screen and (min-width: 768px) {
+    .mobile-menu-open {
+        display: none;
+    }
+.pege-nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    @include font($fs: 24px, $fw: 700, $lh: 28px);
+
+    letter-spacing: 0.03em;
+    margin-right: auto;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    color: var(--blue-color);
+}
+
+.menu__link {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+
+    @include font($fw: 500, $lh: 16px);
+
+    letter-spacing: 0.02em;
+    color: var(--accent-color-header);
+    transition: color var(--transition-dur-and-fund);
+
+    &:hover,
+    &:focus {
+        color: var(--blue-color);
+    }
+}
+
+.menu__link_activ::after {
+    display: block;
+    position: absolute;
+    top: auto;
+    left: 0;
+    bottom: -32px;
+    content: "";
+    background-color: var(--blue-color);
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+}
+
+}
 
 
 
-/*
+
+
+
+/*.logo {
+    font-family: 'Raleway', sans-serif;
+    @include font($fs: 24px, $fw: 700, $lh: 28px);
+
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: var(--blue-color);
+}
+
+.logodark {
+    color: #000000;
+}
+
+
+.page-header {
+padding-top: 16px;
+padding-bottom: 16px;
+}
+
 .page-heder-container {
     display: flex;
     align-items: center;
@@ -34,7 +138,7 @@
 
 .logo {
     font-family: 'Raleway', sans-serif;
-    @include font (26px, 700, 30px);
+    @include font($fs: 26px, $fw: 700, $lh: 30px);
 
     letter-spacing: 0.03em;
     margin-right: 93px;
@@ -59,7 +163,7 @@
     position: relative;
     font-family: 'Roboto', sans-serif;
 
-    @include font ($fs, 500, 16px);
+    @include font($fw: 500, $lh: 16px);
 
     letter-spacing: 0.02em;
     color: var(--accent-color-header);
@@ -90,7 +194,7 @@
     width: 100%;
     height: auto;
 
-    @include font ($fs, 500, 16px);
+    @include font($fw: 500, $lh: 16px);
     
     letter-spacing: 0.02em;
     color: var(--accent-color-text);
@@ -116,7 +220,7 @@
     width: 100%;
     height: auto;
 
-    @include font ($fs, 500, 16px);
+    @include font($fw: 500, $lh: 16px);
 
     letter-spacing: 0.02em;
     color: var(--accent-color-text);
@@ -137,7 +241,7 @@
     width: 100%;
     height: auto;
 
-    @include font ($fs, 500, 16px);
+    @include font($fw: 500, $lh: 16px);
 
     letter-spacing: 0.02em;
     color: var(--accent-color-text);
@@ -160,7 +264,7 @@
     width: 100%;
     height: auto;
 
-    @include font ($fs, 500, 16px);
+    @include font($fw: 500, $lh: 16px);
 
     letter-spacing: 0.02em;
     transition: color var(--transition-dur-and-fund);

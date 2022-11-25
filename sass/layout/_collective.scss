@@ -5,7 +5,7 @@
 }
 
 .name {
-    @include font (16px, 500, 19px);
+    @include font($fs: 16px, $fw: 500, $lh: 19px);
    
     text-align: center;
     letter-spacing: 0.03em;
@@ -14,7 +14,7 @@
 }
 
 .profession {
-    @include font ($fs 16px, $lh 19px);
+    @include font($fs: 16px, $lh: 19px);
    
     text-align: center;
     letter-spacing: 0.03em;
@@ -23,7 +23,7 @@
 }
 
 .title-section {
-    @include font (36px, 700, 42px);
+    @include font ($fs: 36px, $fw: 700, $lh: 42px);
 
     text-align: center;
     letter-spacing: 0.03em;
