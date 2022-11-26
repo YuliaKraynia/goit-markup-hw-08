@@ -60,6 +60,7 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  background-color: yellow;
 }
 
 @media screen and (min-width: 480px) {
@@ -451,7 +452,7 @@ body {
     font-weight: 700;
     line-height: 1.1666666667;
     letter-spacing: 0.03em;
-    margin-right: auto;
+    margin-right: 88px;
     padding-top: 26px;
     padding-bottom: 26px;
     color: var(--blue-color);
@@ -482,6 +483,12 @@ body {
     width: 100%;
     height: 4px;
   }
+  .menu__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .page-header {
+    border-bottom: 1px solid #ECECEC;
+  }
 }
 /*.logo {
     font-family: 'Raleway', sans-serif;
@@ -497,7 +504,6 @@ body {
 .logodark {
     color: #000000;
 }
-
 
 .page-header {
 padding-top: 16px;
@@ -517,21 +523,6 @@ padding-bottom: 16px;
 .pege-nav {
     display: flex;
     align-items: center;
-}
-
-.logo {
-    font-family: 'Raleway', sans-serif;
-    @include font($fs: 26px, $fw: 700, $lh: 30px);
-
-    letter-spacing: 0.03em;
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    color: var(--blue-color);
-}
-
-.logodark {
-    color: #000000;
 }
 
 .menu {
