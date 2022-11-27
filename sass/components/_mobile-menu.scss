@@ -44,6 +44,20 @@
     .mobail-menu__list {
         list-style: none;
     }
+
+    .mobail-menu__list-link {
+        font-family: 'Roboto';
+
+        @include font($fs: 40px, $fw: 500, $lh: 47px);
+        letter-spacing: 0.02em;
+
+        color: #212121;
+    }
+
+
+
+
+
 }
 
 @media screen and (min-width: 768px) {

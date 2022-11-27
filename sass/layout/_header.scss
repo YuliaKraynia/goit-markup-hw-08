@@ -24,19 +24,17 @@
         color: var(--blue-color);
     }
 
-}
-
-.logodark {
-    color: #000000;
-}
-
-.page-heder-container {
+    .logodark {
+        color: #000000;
+    }
+    .page-heder-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    }
 }
-/*==========*/
 
+/*=====   від 768  =====*/
 
 @media screen and (min-width: 768px) {
     .mobile-menu-open {
@@ -51,6 +49,11 @@
         display: flex;
         align-items: center;
     }
+    .page-heder-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
     .logo {
         font-family: 'Raleway', sans-serif;
@@ -61,6 +64,10 @@
         padding-top: 26px;
         padding-bottom: 26px;
         color: var(--blue-color);
+    }
+
+    .logodark {
+        color: #000000;
     }
 
     .menu__link {
@@ -91,174 +98,150 @@
         width: 100%;
         height: 4px;
         }
+
     .menu__item:not(:last-child) {
         margin-right: 50px;
     }
+        .contact-email {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: auto;
+    
+            @include font($fw: 500, $lh: 16px);
+    
+            letter-spacing: 0.02em;
+            color: var(--accent-color-text);
+            transition: color var(--transition-dur-and-fund);
+    
+            margin-left: auto;
+            margin-right: 50px;
+    
+            &:hover,
+            &:focus {
+                color: var(--blue-color);
+            }
+        }
+    
+        .contact-email-icon {
+            fill: currentColor;
+            margin-right: 10px;
+        }
+    
+        .portfolio-email {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: auto;
+    
+            @include font($fw: 500, $lh: 16px);
+    
+            letter-spacing: 0.02em;
+            color: var(--accent-color-text);
+            transition: color var(--transition-dur-and-fund);
+    
+            margin-left: auto;
+            margin-right: 50px;
+    
+            &:hover,
+            &:focus {
+                color: var(--blue-color);
+            }
+        }
+    
+        .contact-phone-number {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            padding-top: 10px;
+    
+            @include font($fw: 500, $lh: 16px);
+    
+            letter-spacing: 0.02em;
+            color: var(--accent-color-text);
+            transition: color var(--transition-dur-and-fund);
+    
+            &:hover,
+            &:focus {
+                color: var(--blue-color);
+            }
+        }
+    
+        .contact-phone-icon {
+            fill: currentColor;
+            margin-right: 10px;
+        }
+    
+        .portfolio-number {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: auto;
+    
+            @include font($fw: 500, $lh: 16px);
+    
+            letter-spacing: 0.02em;
+            transition: color var(--transition-dur-and-fund);
+    
+            color: var(--accent-color-text);
+    
+            &:hover,
+            &:focus {
+                color: var(--blue-color);
+            }
+        }
+
     .page-header {
         border-bottom: 1px solid #ECECEC;
     }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 10;
+    }
+
+}
+
+/*==============  від 1200   ===========*/
+
+@media screen and (min-width: 768px) {
+    .logo {
+        @include font($fs: 26px, $fw: 700, $lh: 31px);
+
+        margin-right: 93px;
+        padding-top: 24px;
+        padding-bottom: 24px;    
+    }
+
+    .page-heder-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contact {
+        flex-direction: row;     
+    }
+
 }
 
 
-/*.logo {
-    font-family: 'Raleway', sans-serif;
-    @include font($fs: 24px, $fw: 700, $lh: 28px);
 
-    letter-spacing: 0.03em;
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    color: var(--blue-color);
-}
 
-.logodark {
-    color: #000000;
-}
 
+
+/*
 .page-header {
 padding-top: 16px;
 padding-bottom: 16px;
-}
+}*/
 
-.page-heder-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+/*.
 
-.page-header {
-    border-bottom: 1px solid #ECECEC;
-}
 
-.pege-nav {
-    display: flex;
-    align-items: center;
-}
 
-.menu {
-    display: flex;
-}
 
-.menu__item:not(:last-child) {
-    margin-right: 50px;
-}
-
-.menu__link {
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-
-    @include font($fw: 500, $lh: 16px);
-
-    letter-spacing: 0.02em;
-    color: var(--accent-color-header);
-    transition: color var(--transition-dur-and-fund);
-
-&:hover,
-&:focus {
-    color: var(--blue-color);
-    }
-}
-
-.menu__link_activ::after {
-    display: block;
-    position: absolute;
-    top: auto;
-    left: 0;
-    bottom: -32px;
-    content: "";
-    background-color: var(--blue-color);
-    border-radius: 2px;
-    width: 100%;
-    height: 4px;
-}
-
-.contact-email {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: auto;
-
-    @include font($fw: 500, $lh: 16px);
-    
-    letter-spacing: 0.02em;
-    color: var(--accent-color-text);
-    transition: color var(--transition-dur-and-fund);
-
-    margin-left: auto;
-    margin-right: 50px;
-
-&:hover,
-&:focus {
-   color: var(--blue-color);
-    }
-}
-
-.contact-email-icon {
-    fill: currentColor;
-    margin-right: 10px;
-}
-
-.portfolio-email {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: auto;
-
-    @include font($fw: 500, $lh: 16px);
-
-    letter-spacing: 0.02em;
-    color: var(--accent-color-text);
-    transition: color var(--transition-dur-and-fund);
-
-    margin-left: auto;
-    margin-right: 50px;
-
-&:hover,
-&:focus {
-    color: var(--blue-color);
-    }
-}
-
-.contact-phone-number {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: auto;
-
-    @include font($fw: 500, $lh: 16px);
-
-    letter-spacing: 0.02em;
-    color: var(--accent-color-text);
-    transition: color var(--transition-dur-and-fund);
-
-&:hover,
-&:focus {
-    color: var(--blue-color);
-    }
-}
-
-.contact-phone-icon {
-    fill: currentColor;
-    margin-right: 10px;
-}
-
-.portfolio-number {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: auto;
-
-    @include font($fw: 500, $lh: 16px);
-
-    letter-spacing: 0.02em;
-    transition: color var(--transition-dur-and-fund);
-
-    color: var(--accent-color-text);
-
-&:hover,
-&:focus {
-    color: var(--blue-color);
-    }
-}
 */
 

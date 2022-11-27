@@ -7,7 +7,7 @@
 @media screen and (min-width: 480px) {
     .container {
         width: 480px;
-        margin-top: auto;
+        margin-right: auto;
         margin-left: auto;
     }
 }
@@ -15,15 +15,13 @@
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
-        margin-top: auto;
-        margin-left: auto;
+      
     }
 }
 
 @media screen and (min-width: 1200px) {
     .container {
         width: 1200px;
-        margin-top: auto;
-        margin-left: auto;
+
     }
 }
