@@ -25,9 +25,10 @@
 
     .mobile-menu__container {
         position: relative;
-        padding-left: 25px;
+        padding-left: 40px;
         padding-top: 48px;
         padding-bottom: 48px;
+   
     }
 
     .mobile-menu__close-btn {
@@ -43,21 +44,66 @@
 
     .mobail-menu__list {
         list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-bottom: 302px;
+
     }
 
     .mobail-menu__list-link {
         font-family: 'Roboto';
-
         @include font($fs: 40px, $fw: 500, $lh: 47px);
         letter-spacing: 0.02em;
 
-        color: #212121;
+        color: var(--accent-color-header);
     }
 
+    .mobail-menu__contact {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-bottom: 64px;
+    }
 
+    .mobail-menu__contact-phone {
+        font-family: 'Roboto';
+        @include font($fs: 34px, $fw: 500, $lh: 40px);   
+        letter-spacing: 0.02em;
+        
+        color: var(--blue-color);
+    }
 
+    .mobail-menu__contact-email {
+        font-family: 'Roboto';
+        @include font($fs: 24px, $fw: 500, $lh: 28px);
 
+        letter-spacing: 0.02em;
+        
+        color: var(--accent-color-text);
+    }
 
+    .mobail-menu__social {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        
+    }
+    .mobail-menu__social-link {
+        font-family: 'Roboto';
+        @include font($fs: 18px, $fw: 500, $lh: 22px);
+        letter-spacing: 0.02em;
+        
+        color: var(--blue-color);
+    }
+    .mobail-menu__social-sign {
+        width: 22px;
+        height: 0px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        transform: rotate(-90deg);
+        right: 10px;    
+    }
 }
 
 @media screen and (min-width: 768px) {

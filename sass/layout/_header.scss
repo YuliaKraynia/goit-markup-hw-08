@@ -154,7 +154,7 @@
             align-items: center;
             width: 100%;
             height: auto;
-            padding-top: 10px;
+            
     
             @include font($fw: 500, $lh: 16px);
     
@@ -196,17 +196,24 @@
         border-bottom: 1px solid #ECECEC;
     }
 
+    .page-heder-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .contact {
         display: flex;
         flex-direction: column;
-        gap: 10;
+        gap: 10px;
+        
     }
-
 }
 
 /*==============  від 1200   ===========*/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+    
     .logo {
         @include font($fs: 26px, $fw: 700, $lh: 31px);
 
@@ -222,13 +229,11 @@
     }
 
     .contact {
-        flex-direction: row;     
+        flex-direction: row;
+
     }
 
 }
-
-
-
 
 
 
@@ -238,10 +243,10 @@ padding-top: 16px;
 padding-bottom: 16px;
 }*/
 
-/*.
 
 
 
 
-*/
+
+
 
