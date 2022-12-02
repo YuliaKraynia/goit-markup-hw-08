@@ -58,8 +58,8 @@
     fill: var(--blue-color);
     }
 
-.modal-close-btn:hover,
-& .modal-close-btn:focus & {
+&.modal-close-btn:hover,
+&.modal-close-btn:focus  {
     fill: var(--accent-color-text);
     }
 }
