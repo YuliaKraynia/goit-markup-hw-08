@@ -736,8 +736,8 @@ padding-bottom: 16px;
   .hero {
     padding-top: 118px;
     padding-bottom: 198px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../imeges/overlay/hero480img@1x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../imeges/overlay/hero480img@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -745,7 +745,7 @@ padding-bottom: 16px;
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../);
+    background-image: url("../../imeges/overlay/hero480img@2x.jpg");
   }
 }
 @media screen and (max-width: 767px) {
@@ -753,7 +753,6 @@ padding-bottom: 16px;
     font-size: 26px;
     font-weight: 900;
     line-height: 1.6153846154;
-    text-align: center;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -783,6 +782,38 @@ padding-bottom: 16px;
     border: 0 solid;
     margin: 0 auto;
     margin-top: 30px;
+  }
+}
+/*=====   від 768  =====*/
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url("../../imeges/overlay/hero768@1x.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../../imeges/overlay/hero768@2x.jpg");
+  }
+}
+/*==============  від 1200   ===========*/
+@media screen and (min-width: 1200px) {
+  *.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #C4C4C4;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../imeges/overlay/hero1200@1x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../imeges/overlay/hero1200@1x.jpg");
+  }
+  .main-title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.3636363636;
+    width: 696px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../../imeges/overlay/hero1200@2x.jpg");
   }
 }
 /*.hero {
