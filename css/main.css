@@ -742,13 +742,6 @@ padding-bottom: 16px;
     background-position: center;
     background-size: cover;
   }
-}
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url("../../imeges/overlay/hero480img@2x.jpg");
-  }
-}
-@media screen and (max-width: 767px) {
   .main-title {
     font-size: 26px;
     font-weight: 900;
@@ -761,8 +754,6 @@ padding-bottom: 16px;
     margin: 0 auto;
     display: block;
   }
-}
-@media screen and (max-width: 767px) {
   .modal-btn {
     display: block;
     font-family: "Roboto", sans-serif;
@@ -784,20 +775,25 @@ padding-bottom: 16px;
     margin-top: 30px;
   }
 }
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: url("../../imeges/overlay/hero480img@2x.jpg");
+  }
+}
 /*=====   від 768  =====*/
 @media screen and (min-width: 768px) {
   .hero {
     background-image: url("../../imeges/overlay/hero768@1x.jpg");
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
     background-image: url("../../imeges/overlay/hero768@2x.jpg");
   }
 }
 /*==============  від 1200   ===========*/
 @media screen and (min-width: 1200px) {
-  *.hero {
+  .hero {
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: #C4C4C4;
@@ -811,7 +807,7 @@ padding-bottom: 16px;
     width: 696px;
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
     background-image: url("../../imeges/overlay/hero1200@2x.jpg");
   }
