@@ -107,14 +107,14 @@
 
     
     <!--HERO-->
-        <section class="hero hero-btn">
+       <section class="hero hero-btn">
             <div class="container">
                 <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
                 
                     <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
                 
             </div>
-        </section>  
+        </section> 
 
     <!--DESCRIPTION-->   
 <!--       <section class="section-description">
@@ -201,16 +201,33 @@
         </section>       -->
 
        <!--COLLECTIVE-->
- <!--       <section class="collective-section">
+        <section class="collective-section">
             <div class="container">
                 <h2 class="title-section">Наша команда</h2>
                 <ul class="list collective">
                     <li class="foto-collective">
-                        <img
-                            src="./imeges/company/igor.jpg"
-                            alt="Игорь Демьяненко"
-                            width="270"
-                            height="260"/>
+                        <picture>
+                            <source srcset="./imeges/company/igor/igor-desk@1x.webp 1x,  ./imeges/company/igor/igor-desk@2x.webp 2x"
+                                media="(min-width: 1200px)"
+                                type="imege/webp" />
+                            <source srcset="./imeges/company/igor/igor-desk@1x.jpg 1x,  ./imeges/company/igor/igor-desk@2x.jpg 2x" 
+                                media="(min-width: 1200px)" />
+                            <source srcset="./imeges/company/igor/igor-tab@1x.webp 1x,  ./imeges/company/igor/igor-tab@2x.webp 2x"
+                                media="(min-width: 768px)"
+                                type="imege/webp" />
+                            <source srcset="./imeges/company/igor/igor-tab@1x.jpg 1x,  ./imeges/company/igor/igor-tab@2x.jpg 2x" 
+                                media="(min-width: 768px)" />
+                            <source srcset="./imeges/company/igor/igor-mob@1x.webp 1x,  ./imeges/company/igor/igor-mob@2x.webp 2x"
+                                media="(max-width: 767px)"
+                                type="imege/webp" />
+                            <source srcset="./imeges/company/igor/igor-mob@1x.jpg 1x,  ./imeges/company/igor/igor-mob@2x.jpg 2x" 
+                                media="(max-width: 767px)"/>
+                                <img
+                                    src="./imeges/company/igor.jpg"
+                                    alt="Игорь Демьяненко"
+                                    width="270"
+                                    height="260"/>
+                        </picture>
                         <div class="collective-name-profession">
                             <h3 class="name">Игорь Демьяненко</h3>
                             <p class="profession" lang="en">Product Designer</p>
@@ -371,7 +388,7 @@
                     </li>
                 </ul>
             </div> 
-        </section>          -->
+        </section>          
 
     <!--CLIENT-->
  <!--       <section class="client-section">
