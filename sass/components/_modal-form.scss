@@ -1,4 +1,343 @@
-.modal-form {
+@media screen and (max-width: 767px) {
+
+    .modal-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal-form-name {
+        @include font($fs: 20px, $fw: 700, $lh: 30px);
+       
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 12px;
+        
+        color: var(--accent-color-header);
+    }
+
+    .modal-form-field {
+        margin-bottom: 10px;
+    }
+
+    .modal-form-field-desc {
+        margin-bottom: 20px;
+    }
+
+    .modal-form-input {
+        width: 100%;
+        height: 40px;
+        padding-left: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        color: #000000;
+        transition: border-color var(--transition-dur-and-fund);
+
+        &:focus {
+            outline: none;
+            border-color: var(--blue-color);
+        }
+    }
+
+    .modal-form-input-desc {
+        display: block;
+        @include font($fs: 12px, $lh: 14px);
+        
+        letter-spacing: 0.01em;
+        margin-bottom: 4px;
+
+        color: var(--accent-color-text);
+    }
+
+    .modal-form-input-wrapper {
+        display: block;
+        position: relative;
+    }
+
+    .modal-form-input-icon {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translate(0, -50%);
+        transition: fill var(--transition-dur-and-fund);
+
+        .modal-form-input:focus+& {
+            fill: var(--blue-color);
+        }
+    }
+
+    .modal-form-message {
+        resize: none;
+        width: 100%;
+        height: 120px;
+        padding: 12px 16px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: border-color var(--transition-dur-and-fund);
+
+        &::placeholder {
+            @include font($lh: 16px);
+
+            letter-spacing: 0.01em;
+            color: rgba(117, 117, 117, 0.5);
+        }
+
+        &:focus {
+            outline: none;
+            border-color: var(--blue-color);
+        }
+    }
+        
+    .modal-form-check-desc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include font($fs: 12px, $lh: 14px);
+        
+        letter-spacing: 0.03em;
+        margin-bottom: 31px;
+    
+        color: #757575;
+    
+        &::before {
+            display: block;
+            width: 16px;
+            height: 15px;
+            border: 1px solid #212121;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 8px;
+            text-decoration: underline;
+            content: "";
+        }
+    
+        .modal-form-check:checked+&::before {
+            background-color: var(--blue-color);
+            border: none;
+            background-image: url(../imeges/link/icon_check.svg);
+            padding: auto;
+        }
+    
+        .modal-form-check:focus+&::before {
+            outline: 2px solid var(--blue-color);
+        }
+    }
+
+    .modal-form-link {
+        color: var(--blue-color);
+        text-decoration: underline;
+    }
+
+    .modal-form-submit {
+        align-self: center;
+        @include font($fs: 16px, $fw: 700, $lh: 30px);
+
+        letter-spacing: 0.06em;
+        padding: 10px 56px 10px 56px;
+        
+        color: #FFFFFF;
+    
+        width: 200px;
+        height: 50px;
+    
+        background-color: var(--blue-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
+        transition: background-color var(--transition-dur-and-fund);
+    
+        &:hover,
+        &:focus {
+            background-color: #188CE8;
+    
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+        }
+    }
+    
+}
+
+/*=====   від 768  =====*/
+
+@media screen and (min-width: 768px) {
+    .modal-form {
+        display: flex;
+        flex-direction: column;
+        }
+    
+    .modal-form-name {
+        @include font($fs: 20px, $fw: 700, $lh: 30px);
+    
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 12px;
+    
+        color: var(--accent-color-header);
+    }
+    
+    .modal-form-field {
+        margin-bottom: 10px;
+    }
+    
+    .modal-form-field-desc {
+        margin-bottom: 20px;
+    }
+    
+    .modal-form-input {
+        width: 100%;
+        height: 40px;
+        padding-left: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        color: #000000;
+        transition: border-color var(--transition-dur-and-fund);
+    
+        &:focus {
+            outline: none;
+            border-color: var(--blue-color);
+            }
+    }
+    
+    .modal-form-input-desc {
+        display: block;
+        @include font($fs: 12px, $lh: 14px);
+    
+        letter-spacing: 0.01em;
+        margin-bottom: 4px;
+    
+        color: var(--accent-color-text);
+    }
+    
+    .modal-form-input-wrapper {
+        display: block;
+        position: relative;
+    }
+    
+    .modal-form-input-icon {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translate(0, -50%);
+        transition: fill var(--transition-dur-and-fund);
+
+        .modal-form-input:focus+& {
+            fill: var(--blue-color);
+        }
+    }
+    
+    .modal-form-message {
+        resize: none;
+        width: 100%;
+        height: 120px;
+        padding: 12px 16px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: border-color var(--transition-dur-and-fund);
+    
+        &::placeholder {
+            @include font($lh: 16px);
+    
+            letter-spacing: 0.01em;
+            color: rgba(117, 117, 117, 0.5);
+        }
+    
+        &:focus {
+            outline: none;
+            border-color: var(--blue-color);
+        }
+    }
+    
+    .modal-form-check-desc {
+        display: flex;
+            justify-content: center;
+        align-items: center;
+        @include font($fs: 12px, $lh: 14px);
+    
+        letter-spacing: 0.03em;
+        margin-bottom: 30px;
+    
+        color: #757575;
+    
+        &::before {
+            display: block;
+            width: 16px;
+            height: 15px;
+            border: 1px solid #212121;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 8px;
+            text-decoration: underline;
+            content: "";
+        }
+    
+        .modal-form-check:checked+&::before {
+            background-color: var(--blue-color);
+            border: none;
+            background-image: url(../imeges/link/icon_check.svg);
+            padding: auto;
+        }
+    
+        .modal-form-check:focus+&::before {
+            outline: 2px solid var(--blue-color);
+        }
+    }
+    
+    .modal-form-link {
+        color: var(--blue-color);
+        text-decoration: underline;
+    }
+    
+    .modal-form-submit {
+        align-self: center;
+        @include font($fs: 16px, $fw: 700, $lh: 30px);
+    
+        letter-spacing: 0.06em;
+        padding: 10px 56px 10px 56px;
+    
+        color: #FFFFFF;
+    
+        width: 200px;
+        height: 50px;
+    
+        background-color: var(--blue-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
+        transition: background-color var(--transition-dur-and-fund);
+    
+        &:hover,
+        &:focus {
+            background-color: #188CE8;
+    
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+        }
+    }
+    
+}
+
+
+
+
+/*==============  від 1200   ===========*/
+
+@media screen and (min-width: 1200px) {
+    .modal-form-name {
+        @include font($fs: 20px, $fw: 700, $lh: 23px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*.modal-form {
     display: flex;
     flex-direction: column;
 }
@@ -35,7 +374,6 @@
         outline: none;
         border-color: var(--blue-color);
     }
-
 }
 
 .modal-form-input-desc {
@@ -159,4 +497,4 @@
     border-radius: 4px;
     }
 }
-
+*/

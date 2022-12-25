@@ -1,4 +1,13 @@
 .section-working {
+    display: none;
+}
+
+/*==============  від 1200   ===========*/
+
+@media screen and (min-width: 1200px) {
+
+.section-working {
+    display: block;
     padding-top: 47px;
     padding-bottom: 94px;
 }
@@ -34,4 +43,5 @@
     letter-spacing: 0.03em;
 
     color: #FFFFFF;
+}
 }

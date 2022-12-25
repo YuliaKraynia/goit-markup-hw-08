@@ -102,95 +102,96 @@
     .menu__item:not(:last-child) {
         margin-right: 50px;
     }
-        .contact-email {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            height: auto;
+
+    .contact-email {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: auto;
     
-            @include font($fw: 500, $lh: 16px);
+        @include font($fw: 500, $lh: 16px);
     
-            letter-spacing: 0.02em;
-            color: var(--accent-color-text);
-            transition: color var(--transition-dur-and-fund);
+        letter-spacing: 0.02em;
+        color: var(--accent-color-text);
+        transition: color var(--transition-dur-and-fund);
     
-            margin-left: auto;
-            margin-right: 50px;
+        margin-left: auto;
+        margin-right: 50px;
     
-            &:hover,
-            &:focus {
-                color: var(--blue-color);
-            }
+        &:hover,
+        &:focus {
+            color: var(--blue-color);
         }
+    }
     
-        .contact-email-icon {
-            fill: currentColor;
-            margin-right: 10px;
+    .contact-email-icon {
+        fill: currentColor;
+        margin-right: 10px;
+    }
+    
+    .portfolio-email {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    
+        @include font($fw: 500, $lh: 16px);
+    
+        letter-spacing: 0.02em;
+        color: var(--accent-color-text);
+        transition: color var(--transition-dur-and-fund);
+    
+        margin-left: auto;
+        margin-right: 50px;
+    
+        &:hover,
+        &:focus {
+            color: var(--blue-color);
         }
+    }
     
-        .portfolio-email {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            height: auto;
-    
-            @include font($fw: 500, $lh: 16px);
-    
-            letter-spacing: 0.02em;
-            color: var(--accent-color-text);
-            transition: color var(--transition-dur-and-fund);
-    
-            margin-left: auto;
-            margin-right: 50px;
-    
-            &:hover,
-            &:focus {
-                color: var(--blue-color);
-            }
-        }
-    
-        .contact-phone-number {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            height: auto;
+    .contact-phone-number {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: auto;
             
     
-            @include font($fw: 500, $lh: 16px);
+        @include font($fw: 500, $lh: 16px);
     
-            letter-spacing: 0.02em;
-            color: var(--accent-color-text);
-            transition: color var(--transition-dur-and-fund);
+        letter-spacing: 0.02em;
+        color: var(--accent-color-text);
+        transition: color var(--transition-dur-and-fund);
     
-            &:hover,
-            &:focus {
-                color: var(--blue-color);
-            }
+        &:hover,
+        &:focus {
+            color: var(--blue-color);
         }
+    }
     
-        .contact-phone-icon {
-            fill: currentColor;
-            margin-right: 10px;
+    .contact-phone-icon {
+        fill: currentColor;
+        margin-right: 10px;
+    }
+    
+    .portfolio-number {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    
+        @include font($fw: 500, $lh: 16px);
+    
+        letter-spacing: 0.02em;
+        transition: color var(--transition-dur-and-fund);
+    
+        color: var(--accent-color-text);
+    
+        &:hover,
+        &:focus {
+            color: var(--blue-color);
         }
-    
-        .portfolio-number {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            height: auto;
-    
-            @include font($fw: 500, $lh: 16px);
-    
-            letter-spacing: 0.02em;
-            transition: color var(--transition-dur-and-fund);
-    
-            color: var(--accent-color-text);
-    
-            &:hover,
-            &:focus {
-                color: var(--blue-color);
-            }
-        }
+    }
 
     .page-header {
         border-bottom: 1px solid #ECECEC;
@@ -206,7 +207,6 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
-        
     }
 }
 

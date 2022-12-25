@@ -1,3 +1,5 @@
+/*=====   до 768  =====*/
+
 @media screen and (max-width: 767px) {
     .hero {
         padding-top: 118px;
@@ -69,7 +71,7 @@
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: #FFFFFF;
-        width: 100%;
+        width: 360px;
         margin: 0 auto;
         display: block;
     }

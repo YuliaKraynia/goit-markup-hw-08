@@ -1,4 +1,180 @@
-.collective-section {
+@media screen and (max-width: 767px) {
+    .collective-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background: #F5F4FA;
+    }
+    .name {
+        @include font($fs: 16px, $fw: 500, $lh: 19px);
+
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--accent-color-header);
+        margin-bottom: 10px;
+    }
+
+    .profession {
+        @include font($fs: 16px, $lh: 19px);
+
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--accent-color-text);
+        margin-bottom: 16px;
+    }
+
+    .title-section {
+        @include font ($fs: 28px, $fw: 700, $lh: 32px);
+
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--accent-color-header);
+        margin-bottom: 30px;
+    }
+
+    .collective {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .collective-name-profession {
+        padding-top: 30px;
+        padding-bottom: 24px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+    .social-list-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        }
+        
+    .social-list-icon {
+        fill: #AFB1B8;
+
+    }
+ }
+
+ /*=====   від 768  =====*/
+
+ @media screen and (min-width: 768px) {
+    .collective-section {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            background: #F5F4FA;
+        }
+    .name {
+        @include font($fs: 16px, $fw: 500, $lh: 19px);
+
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--accent-color-header);
+        margin-bottom: 10px;
+        }
+
+    .profession {
+        @include font($fs: 16px, $lh: 19px);
+        
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--accent-color-text);
+        margin-bottom: 16px;
+        }
+
+    .title-section {
+        @include font ($fs: 28px, $fw: 700, $lh: 33px);
+
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--accent-color-header);
+        margin-bottom: 30px;
+    }
+
+    .collective {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .foto-collective {
+        flex-basis: calc((100% - 30px)/2);
+    }
+
+    .collective-name-profession {
+        padding-top: 30px;
+        padding-bottom: 24px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    .social-list {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .social-list-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+
+    }
+
+    .social-list-icon {
+        fill: #AFB1B8;
+    }
+
+}
+
+/*==============  від 1200   ===========*/
+
+@media screen and (min-width: 1200px) {
+    .collective-section {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    .title-section {
+        @include font ($fs: 36px, $fw: 700, $lh: 42px);
+        margin-bottom: 50px
+    }
+
+    .foto-collective {
+        flex-basis: calc((100% - 90px)/4);
+    }
+
+    .collective-name-profession {
+        padding-bottom: 30px;
+    }
+
+    .social-list-link {
+        transition: background-color var(--transition-dur-and-fund);
+
+        &:hover,
+        &:focus {
+            background-color: var(--blue-color);
+        }
+    }
+
+    .social-list-icon {
+        transition: fill var(--transition-dur-and-fund);
+
+        .social-list-link:hover &,
+        .social-list-link:focus & {
+            fill: #ffffff;
+        }
+    }
+}
+
+/*.collective-section {
     padding-top: 94px;
     padding-bottom: 94px;
     background: #F5F4FA;
@@ -80,4 +256,4 @@
     fill: #ffffff;
     }
 }
-
+*/
