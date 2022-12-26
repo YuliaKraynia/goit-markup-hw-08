@@ -162,11 +162,16 @@
     }
 
     .footer-logo__name {
-        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .logolight {
         color: #FFFFFF;
+    }
+
+    .footer-logo {
+        text-align: center;
     }
 
     .adress {
@@ -176,7 +181,6 @@
         letter-spacing: 0.03em;
         color: #FFFFFF;
         text-decoration: none;
-
     }
 
     .connection {
@@ -186,7 +190,6 @@
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
         text-align: center;
-
     }
 
     .footer-adress {
@@ -247,7 +250,8 @@
     .footer-box__tablet {
         display: flex;
         align-items: baseline;
-        gap: 165px;
+        justify-content: space-around;
+        
         margin-bottom: 60px;
     }
 
@@ -316,6 +320,16 @@
 /*==============  від 1200   ===========*/
 
 @media screen and (min-width: 1200px) {
+    .footer-logo {
+        text-align: left;
+    }
+        
+    .footer-box__tablet {
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+
     .footer-email {
         margin-top: 9px;
     }
