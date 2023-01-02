@@ -14,8 +14,9 @@
 </head>
 
 <body>
+    <main>
     <!---HEADER-->
-<header class="page-header">
+    <header class="page-header">
         <div class="container page-heder-container">
             <nav class="pege-nav">
             <a class="link logo" href="WebStudio" lang="en">Web<span class="logodark">Studio</span></a>
@@ -57,26 +58,27 @@
                 </li>
             </ul>
         </div>
+
         <div class="mobile-menu js-menu-container">
-            <div class="container mobile-menu__container">
+            <div class="mobile-menu__container">
                 <button class="mobile-menu__close-btn js-close-menu">
                     <svg class="mobile-menu__close-icon" width="40" height="40">
                         <use href="./imeges/link/sprite.svg#icon-close-modal"></use>
                     </svg>
                 </button>
-
-                <ul class="mobail-menu__list">
-                    <li class="link">
-                        <a class="link mobail-menu__list-link" href="">Студия</a>
-                    </li>
-                    <li class="link mobail-menu__list-link">
-                        <a class="link mobail-menu__list-link" href="">Портфолио</a>
-                    </li>
-                    <li class="link mobail-menu__list-link">
-                        <a class="link mobail-menu__list-link" href="">Контакты</a>
-                    </li>
-                </ul>
-
+                <nav>
+                    <ul class="mobail-menu__list">
+                        <li class="link mobail-menu__nav-link">
+                            <a class="link mobail-menu__list-link mobail-menu__link-activ" href="">Студия</a>
+                        </li>
+                        <li class="link mobail-menu__nav-link">
+                            <a class="link mobail-menu__list-link" href="portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="link mobail-menu__nav-link">
+                            <a class="link mobail-menu__list-link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
 
                 <ul class="mobail-menu__contact">
                     <li class="link">
@@ -114,10 +116,10 @@
                     <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
                 
             </div>
-        </section> 
+        </section>
 
     <!--DESCRIPTION-->   
-<section class="section-description">
+        <section class="section-description">
             <div class="container">
                 <ul class="list description">
                     <li class="block-description">
@@ -159,39 +161,63 @@
                 </ul>
             </div>
            
-        </section> 
+        </section>
 
         <!--WORKING-->
-<section class="section-working">
+       <section class="section-working">
             <div class="container">
                 <h2 class="title-section">Чем мы занимаемся</h2>
                 <ul class="list foto-work">
                     <li class="foto">
+                        <picture>
+                            <source srcset="./imeges/business/desctop@1x.webp 1x,  ./imeges/business/desctop@2x.webp 2x"
+                                media="(min-width: 1200px)"
+                                type="imege/webp"/>
+                            <source srcset="./imeges/business/desctop@1x.jpg 1x,  ./imeges/business/desctop@2x.jpg 2x"
+                                media="(min-width: 1200px)"/>
                         <img
                             src="./imeges/business/picture1.jpg"
                             alt="Работа студии"
                             width="370"
                             height="294">
+                        </picture>
                             <div class="foto-work-name">
                                 <p class="foto-name">Десктопные приложения</p>
-                            </div>
+                            </div>  
+
                     </li>
                     <li class="foto">
-                        <img
-                            src="./imeges/business/picture2.jpg"
+                        <picture>
+                            <source srcset="./imeges/business/mobil@1x.webp 1x,  ./imeges/business/mobil@2x.webp 2x"
+                                media="(min-width: 1200px)"
+                                type="imege/webp"/>
+                            <source srcset="./imeges/business/mobil@1x.jpg 1x,  ./imeges/business/mobil@2x.jpg 2x"
+                                media="(min-width: 1200px)"/>
+                            <img
+                                src="./imeges/business/picture2.jpg"
+                                    alt="Работа студии"
+                                    width="370"
+                                    height="294">
+                                                             
+                        </picture>
+                        <div class="foto-work-name">
+                            <p class="foto-name">Мобильные приложения</p>
+                        </div>   
+                    </li>
+                    <li class="foto">
+                        <picture>
+                            <source srcset="./imeges/business/disan@1x.webp 1x,  ./imeges/business/disan@2x.webp 2x"
+                                media="(min-width: 1200px)"
+                                type="imege/webp" />
+                            <source srcset="./imeges/business/disan@1x.jpg 1x,  ./imeges/business/disan@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <img
+                                src="./imeges/business/picture3.jpg"
                                 alt="Работа студии"
                                 width="370"
-                                height="294">
-                                <div class="foto-work-name">
-                                    <p class="foto-name">Мобильные приложения</p>
-                                </div>
-                    </li>
-                    <li class="foto">
-                        <img
-                            src="./imeges/business/picture3.jpg"
-                            alt="Работа студии"
-                            width="370"
-                            height="294">
+                                height="294">   
+                        </picture>
+
                             <div class="foto-work-name">
                                 <p class="foto-name">Дизайнерские решения</p>
                             </div>
@@ -201,7 +227,8 @@
         </section>    
 
        <!--COLLECTIVE-->
-<section class="collective-section">
+
+        <section class="collective-section">
             <div class="container">
                 <h2 class="title-section">Наша команда</h2>
                 <ul class="list collective">
@@ -430,10 +457,10 @@
                     </li>
                 </ul>
             </div> 
-        </section>
+        </section> 
 
    <!--CLIENT-->
-<section class="client-section">
+       <section class="client-section">
             <div class="container">
                 <h2 class="title-section">Постоянные клиенты</h2>
                 <ul class="client-list list">
@@ -486,7 +513,7 @@
     </main>
 
     <!--FOOTER-->
-<footer class="footer">
+    <footer class="footer">
         <div class="container footer-box">
            <div class="footer-box__tablet">
                 <div class="footer-logo">
@@ -567,7 +594,7 @@
             </form>
         </div>
  
-    </footer> 
+    </footer>
 
 <!--MODAL FORM-->
     <div class="backdrop is-hidden" data-modal>
@@ -578,7 +605,7 @@
                 </svg>
             </button>
             <form class="modal-form">
-                <pre class="modal-form-name">Оставьте свои данные, мы вам перезвоним</pre>
+                <p class="modal-form-name">Оставьте свои данные, мы вам перезвоним</p>
                 <label class="modal-form-field">
                     <span class="modal-form-input-desc">Имя</span>
                     <span class="modal-form-input-wrapper">
@@ -645,5 +672,6 @@
 
  <script src="./js/modal.js"></script>
  <script src="./js/mobile-menu.js"></script>
+ 
 </body>
 </html>

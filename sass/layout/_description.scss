@@ -1,13 +1,14 @@
 @media screen and (max-width: 767px) {
     .section-description {
         padding-top: 60px;
-        padding-bottom: 30px;
+        padding-bottom: 60px;
     }
 
     .description {
         display: flex;
         flex-direction: column;
     }
+
     .block-description-icon {
         width: 100%;
         height: 120px;
@@ -18,6 +19,7 @@
         border-radius: 4px;
         margin-bottom: 30px;
     }
+    
     .description-icon {
         width: 70px;
         height: 70px;

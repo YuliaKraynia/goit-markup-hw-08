@@ -7,7 +7,9 @@
 
     .modal-form-name {
         @include font($fs: 20px, $fw: 700, $lh: 30px);
-       
+
+        max-width: 448px;
+      
         text-align: center;
         letter-spacing: 0.03em;
         margin-bottom: 12px;
@@ -248,7 +250,7 @@
     
     .modal-form-check-desc {
         display: flex;
-            justify-content: center;
+        justify-content: center;
         align-items: center;
         @include font($fs: 12px, $lh: 14px);
     
@@ -314,9 +316,6 @@
     }
     
 }
-
-
-
 
 /*==============  від 1200   ===========*/
 

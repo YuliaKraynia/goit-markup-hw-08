@@ -2,6 +2,7 @@
     .collective-section {
         padding-top: 60px;
         padding-bottom: 60px;
+
         background: #F5F4FA;
     }
     .name {
@@ -23,8 +24,9 @@
     }
 
     .title-section {
+        
         @include font ($fs: 28px, $fw: 700, $lh: 32px);
-
+        
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--accent-color-header);
@@ -34,6 +36,7 @@
     .collective {
         display: flex;
         flex-wrap: wrap;
+        gap: 30px;
     }
 
     .collective-name-profession {
@@ -62,7 +65,6 @@
         
     .social-list-icon {
         fill: #AFB1B8;
-
     }
  }
 
@@ -74,6 +76,7 @@
             padding-bottom: 60px;
             background: #F5F4FA;
         }
+
     .name {
         @include font($fs: 16px, $fw: 500, $lh: 19px);
 
@@ -104,10 +107,13 @@
     .collective {
         display: flex;
         flex-wrap: wrap;
+
         gap: 30px;
     }
 
     .foto-collective {
+        width: 100%;
+        height: auto;
         flex-basis: calc((100% - 30px)/2);
     }
 
