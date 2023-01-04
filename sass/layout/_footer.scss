@@ -3,6 +3,10 @@
         padding-top: 60px;
         padding-bottom: 60px;
         background-color: var(--accent-background-dark);
+        .logo {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
     }
 
     .footer-logo {

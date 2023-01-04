@@ -495,9 +495,12 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 10px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1175,7 +1178,7 @@ padding-bottom: 16px;
 @media screen and (max-width: 767px) {
   .hero {
     padding-top: 118px;
-    padding-bottom: 198px;
+    padding-bottom: 118px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../imeges/overlay/hero480img@1x.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imeges/overlay/hero480img@1x.jpg");
     background-repeat: no-repeat;
@@ -1225,7 +1228,7 @@ padding-bottom: 16px;
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 118px;
-    padding-bottom: 198px;
+    padding-bottom: 118px;
     max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../imeges/overlay/hero768@1x.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imeges/overlay/hero768@1x.jpg");
@@ -1593,13 +1596,16 @@ padding-bottom: 16px;
         flex-wrap: wrap;
     gap: 30px;
   }
-  .collective-name-profession {
-    padding-top: 30px;
-    padding-bottom: 24px;
+  .foto-collective {
     background: #FFFFFF;
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+  }
+  .collective-name-profession {
+    padding-top: 30px;
+    padding-bottom: 24px;
+    background: #FFFFFF;
   }
   .social-list {
     display: -webkit-box;
@@ -1678,6 +1684,10 @@ padding-bottom: 16px;
     height: auto;
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
   }
   .collective-name-profession {
     padding-top: 30px;
@@ -2100,6 +2110,10 @@ padding-bottom: 16px;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--accent-background-dark);
+  }
+  .footer .logo {
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .footer-logo {
     display: -webkit-box;

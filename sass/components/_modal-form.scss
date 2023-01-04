@@ -91,7 +91,9 @@
         
     .modal-form-check-desc {
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
         align-items: center;
         @include font($fs: 12px, $lh: 14px);
         
@@ -125,6 +127,7 @@
     }
 
     .modal-form-link {
+       
         color: var(--blue-color);
         text-decoration: underline;
     }
@@ -155,7 +158,11 @@
             border-radius: 4px;
         }
     }
-    
+  //  .modal-form-modile {
+        //display: flex;
+      
+        
+   // }
 }
 
 /*=====   від 768  =====*/
