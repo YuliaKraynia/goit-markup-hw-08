@@ -10,10 +10,10 @@
         border: none;
         padding: 0;
         line-height: 0;
-        padding-top: 10px;
     }
 
     .logo {
+        display: block;
         font-family: 'Raleway', sans-serif;
         @include font($fs: 24px, $fw: 700, $lh: 28px);
 
@@ -33,6 +33,7 @@
         justify-content: space-between;
 
     }
+
 }
 
 /*=====   від 768  =====*/
@@ -60,6 +61,7 @@
     }
 
     .logo {
+        display: block;
         font-family: 'Raleway', sans-serif;
         @include font($fs: 24px, $fw: 700, $lh: 28px);
 
@@ -211,8 +213,11 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+        padding-left: 84px;
     }
+    
 }
+
 
 /*==============  від 1200   ===========*/
 

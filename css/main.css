@@ -95,9 +95,13 @@ body {
     visibility: hidden;
     pointer-events: none;
     padding-left: 40px;
-    padding-top: 48px;
+    padding-top: auto;
     padding-bottom: 48px;
     background-color: #FFFFFF;
+  }
+  .mobile-menu .container {
+    display: block;
+    height: 100%;
   }
   .mobile-menu.is-open {
     opacity: 1;
@@ -107,6 +111,7 @@ body {
     transition: opacity 500ms linear, visibility 500ms linear;
   }
   .mobile-menu-open {
+    margin-left: auto;
     -webkit-transition: fill var(--transition-dur-and-fund);
     transition: fill var(--transition-dur-and-fund);
   }
@@ -117,9 +122,10 @@ body {
     position: relative;
   }
   .mobile-menu__close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 0;
     background-color: transparent;
     border: none;
     padding: 0;
@@ -129,6 +135,19 @@ body {
   }
   .mobile-menu__close-btn:hover, .mobile-menu__close-btn:focus {
     fill: var(--blue-color);
+  }
+  .menu-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .mobail-menu__list {
     list-style: none;
@@ -140,7 +159,6 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 32px;
-    margin-bottom: 302px;
   }
   .mobail-menu__list-link {
     color: var(--accent-color-header);
@@ -175,9 +193,9 @@ body {
   }
   .mobail-menu__contact-phone {
     font-family: "Roboto";
-    font-size: 34px;
+    font-size: 29px;
     font-weight: 500;
-    line-height: 1.1764705882;
+    line-height: 1.3793103448;
     letter-spacing: 0.02em;
     color: var(--blue-color);
   }
@@ -217,7 +235,7 @@ body {
     background-color: rgba(33, 33, 33, 0.2);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
@@ -902,9 +920,9 @@ body {
     border: none;
     padding: 0;
     line-height: 0;
-    padding-top: 10px;
   }
   .logo {
+    display: block;
     font-family: "Raleway", sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -959,6 +977,7 @@ body {
             align-items: center;
   }
   .logo {
+    display: block;
     font-family: "Raleway", sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -1116,6 +1135,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 10px;
+    padding-left: 84px;
   }
 }
 /*==============  від 1200   ===========*/

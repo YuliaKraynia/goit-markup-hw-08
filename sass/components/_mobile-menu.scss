@@ -13,11 +13,16 @@
         pointer-events: none;
 
         padding-left: 40px;
-        padding-top: 48px;
+        padding-top: auto;
         padding-bottom: 48px;
 
         background-color: #FFFFFF;
-        
+
+        .container {
+            display: block;
+            height: 100%;
+        }
+       
     }
 
     .mobile-menu.is-open {
@@ -28,6 +33,7 @@
     }
 
     .mobile-menu-open {
+        margin-left: auto;
         transition: fill var(--transition-dur-and-fund);
             
         &:hover,
@@ -36,17 +42,20 @@
         }
     }
 
-
-    @media screen and (min-width: 768px) {}
+    //@media screen and (min-width: 768px) {}
 
     .mobile-menu__container {
         position: relative;     
     }
 
     .mobile-menu__close-btn {
-        position: absolute;
-        top: 10px;
-        right: 15px;
+        display: block;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: 0;
+        //position: absolute;
+        //top: 10px;
+        //right: 15px;
 
         background-color: transparent;
         border: none;
@@ -60,15 +69,21 @@
         }
 
     }
+    .menu-content {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-between;
+    }
 
     .mobail-menu__list {
         list-style: none;
         display: flex;
         flex-direction: column;
         gap: 32px;
-        margin-bottom: 302px;
-
+        //margin-bottom: 302px;
     }
+
     .mobail-menu__list-link {
         color: var(--accent-color-header);
     }
@@ -101,7 +116,7 @@
 
     .mobail-menu__contact-phone {
         font-family: 'Roboto';
-        @include font($fs: 34px, $fw: 500, $lh: 40px);   
+        @include font($fs: 29px, $fw: 500, $lh: 40px);   
         letter-spacing: 0.02em;
         
         color: var(--blue-color);
@@ -122,6 +137,7 @@
         gap: 20px;
         
     }
+
     .mobail-menu__social-link {
         font-family: 'Roboto';
         @include font($fs: 18px, $fw: 500, $lh: 22px);
@@ -130,6 +146,7 @@
         color: var(--blue-color);
        
     }
+
     .mobail-menu__social-list {
         position: relative;
     }
@@ -145,8 +162,6 @@
         height: 100%;
         background-color: rgba(33, 33, 33, 0.2);     
     }
-}
-
 
 @media screen and (min-width: 768px) {
     .mobile-menu {
@@ -154,3 +169,4 @@
     }
 }
 
+}
