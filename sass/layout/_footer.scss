@@ -163,6 +163,10 @@
         padding-top: 60px;
         padding-bottom: 60px;
         background-color: var(--accent-background-dark);
+        .logo {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
     }
 
     .footer-logo__name {
@@ -333,6 +337,7 @@
         display: flex;
         align-items: stretch;
         justify-content: flex-start;
+
     }
 
     .footer-email {
@@ -357,10 +362,10 @@
         gap: 70px;
         margin-bottom: 0px;
     }
+
     .footer-box {
         display: flex;
         align-items: baseline;
-        gap: 70px;
     }
 
     .footer-form__name {
@@ -403,10 +408,6 @@
 
 
 }
-
-
-
-
 
 
 /*.footer {

@@ -54,7 +54,7 @@
     }
 }
 
-.modal-close-btn-icon {
+.modal-close-btn {
     transition: fill var(--transition-dur-and-fund);
 
 &:hover,
@@ -125,20 +125,16 @@
         }
     }
 
-    .modal-close-btn-icon {
+    .modal-close-btn {
         transition: fill var(--transition-dur-and-fund);
 
         &:hover,
         &:focus {
             fill: var(--blue-color);
         }
-
-        &.modal-close-btn:hover,
-        &.modal-close-btn:focus {
-            fill: var(--accent-color-text);
-        }
     }
 }
+
 /*========= від 1200px  ============*/
 @media screen and (min-width: 1200px) {
     .modal {

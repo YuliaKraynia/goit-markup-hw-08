@@ -5,6 +5,12 @@
         flex-direction: column;
     }
 
+    .modal {
+        background-color: #FFFFFF;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+    }
+
     .modal-form-name {
         @include font($fs: 20px, $fw: 700, $lh: 30px);
 
@@ -92,7 +98,6 @@
     .modal-form-check-desc {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
         gap: 10px;
         align-items: center;
         @include font($fs: 12px, $lh: 14px);
@@ -158,11 +163,7 @@
             border-radius: 4px;
         }
     }
-  //  .modal-form-modile {
-        //display: flex;
-      
-        
-   // }
+
 }
 
 /*=====   від 768  =====*/
@@ -172,7 +173,13 @@
         display: flex;
         flex-direction: column;
         }
-    
+
+    .modal {
+        background-color: #FFFFFF;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+    }
+
     .modal-form-name {
         @include font($fs: 20px, $fw: 700, $lh: 30px);
     
@@ -182,7 +189,7 @@
     
         color: var(--accent-color-header);
     }
-    
+
     .modal-form-field {
         margin-bottom: 10px;
     }
@@ -330,7 +337,13 @@
     .modal-form-name {
         @include font($fs: 20px, $fw: 700, $lh: 23px);
     }
-}
+
+    .modal-form-check-desc {
+        @include font()
+    }
+
+    
+}  
 
 
 
