@@ -154,6 +154,10 @@
         border-radius: 4px;
         border: none;
     }
+
+    .footer-form-icon {
+        margin-left: 10px;
+    }
 }
 
 /*=====   від 768  =====*/
@@ -323,6 +327,9 @@
         border: none;
     }
 
+    .footer-form-icon {
+        margin-left: 10px;
+        }
 }
 
 /*==============  від 1200   ===========*/
@@ -337,7 +344,6 @@
         display: flex;
         align-items: stretch;
         justify-content: flex-start;
-
     }
 
     .footer-email {
@@ -384,10 +390,6 @@
         text-align: left;
         margin-bottom: 20px;
     }
-
-    .footer-form-icon {
-        margin-left: 10px;
-    }    
 
     .footer-form__connection {
         justify-content: flex-start;
